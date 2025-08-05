@@ -79,49 +79,36 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="gradient-bg hero-pattern min-h-screen flex items-center pt-20">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="text-white">
-                    <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        Segurança Rodoviária
-                        <span class="text-accent-blue">Inteligente</span>
-                    </h2>
-                    <p class="text-xl mb-8 text-gray-200 leading-relaxed">
-                        Protegemos vidas nas estradas com tecnologia avançada de monitoramento e sistemas de segurança
-                        rodoviária de última geração.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
-                            class="bg-accent-blue hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
-                            Conheça Nossos Serviços
-                        </button>
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
-                            class="border-2 border-white text-white hover:bg-white hover:text-primary-dark px-8 py-4 rounded-lg font-semibold transition-all">
-                            Entre em Contato
-                        </button>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="relative">
-                        <div
-                            class="w-80 h-80 bg-white bg-opacity-10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                            <svg class="w-48 h-48 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
-                            </svg>
-                        </div>
-                        <div
-                            class="absolute -top-4 -right-4 w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                            </svg>
+    <section id="home" class="gradient-bg hero-pattern min-h-screen flex items-center pt-0">
+        <!-- Imagem de fundo -->
+        <img src="caminhao.png" alt="Caminhão moderno"
+            class="absolute inset-0 w-full h-full object-cover opacity-60 z-0 pointer-events-none" />
+        <!-- Overlay escuro -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-dark/80 to-secondary-dark/80 z-10"></div>
+        <div class="container mx-auto px-6 relative z-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-white">
+                        <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                            Segurança Rodoviária
+                            <span class="text-accent-blue">Inteligente</span>
+                        </h2>
+                        <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                            Protegemos vidas nas estradas com tecnologia avançada de monitoramento e sistemas de
+                            segurança
+                            rodoviária de última geração.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+                                class="bg-accent-blue hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                                Conheça Nossos Serviços
+                            </button>
+                            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                                class="border-2 border-white text-white hover:bg-white hover:text-primary-dark px-8 py-4 rounded-lg font-semibold transition-all">
+                                Entre em Contato
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Services Section -->
@@ -138,29 +125,33 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                     <div class="w-16 h-16 bg-accent-blue rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 19c-3.87 0-7-3.13-7-7 0-.84.16-1.65.43-2.4L12 13l6.57-3.4c.27.75.43 1.56.43 2.4 0 3.87-3.13 7-7 7z" />
+                        <!-- Ícone de gráfico de barras -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <rect x="3" y="10" width="4" height="11" fill="currentColor" />
+                            <rect x="10" y="6" width="4" height="15" fill="currentColor" />
+                            <rect x="17" y="2" width="4" height="19" fill="currentColor" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-primary-dark mb-4">Monitoramento Inteligente</h3>
                     <p class="text-secondary-dark leading-relaxed">
-                        Sistemas avançados de câmeras e sensores para monitoramento em tempo real do tráfego e detecção
-                        de incidentes.
+                        Sistemas avançados de câmeras e sensores para monitoramento em tempo real de fadiga para
+                        prevenção
+                        de acidentes.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                     <div class="w-16 h-16 bg-accent-blue rounded-lg flex items-center justify-center mb-6">
+                        <!-- Ícone de escudo -->
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            <path d="M12 2l7 4v6c0 5.25-3.75 10-7 10s-7-4.75-7-10V6l7-4z" />
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-primary-dark mb-4">Controle de Velocidade</h3>
+                    <h3 class="text-2xl font-bold text-primary-dark mb-4">Detecção de Assaltos</h3>
                     <p class="text-secondary-dark leading-relaxed">
-                        Radares inteligentes e sistemas de controle de velocidade para reduzir acidentes e garantir o
-                        cumprimento das leis de trânsito.
+                        Tecnologia de monitoramento para identificar situações de assalto em tempo real e acionar
+                        alertas imediatos.
                     </p>
                 </div>
 
@@ -187,12 +178,14 @@
                 <div>
                     <h2 class="text-4xl font-bold text-primary-dark mb-6">Sobre Nós</h2>
                     <p class="text-lg text-secondary-dark mb-6 leading-relaxed">
-                        A Safe Vision é líder em soluções de segurança rodoviária, combinando tecnologia avançada com
-                        expertise em engenharia de tráfego para criar estradas mais seguras.
+                        Somos uma equipe de estudantes de Engenharia de Software apaixonados por tecnologia e inovação.
+                        A Safe Vision nasceu do nosso desejo de aplicar nossos conhecimentos para tornar as estradas
+                        mais seguras para todos.
                     </p>
                     <p class="text-lg text-secondary-dark mb-8 leading-relaxed">
-                        Com mais de 10 anos de experiência, nossa equipe desenvolve sistemas inovadores que salvam vidas
-                        e melhoram a mobilidade urbana em todo o país.
+                        Estamos começando agora nossa trajetória no mercado, trazendo ideias novas e muita vontade de
+                        fazer a diferença na segurança rodoviária. Acreditamos que, com tecnologia e dedicação, podemos
+                        contribuir para um trânsito mais seguro e inteligente.
                     </p>
 
                     <div class="grid grid-cols-2 gap-6">
@@ -258,7 +251,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold">Endereço</h4>
-                                <p class="text-gray-200">Av. Tecnologia, 1000 - São Paulo, SP</p>
+                                <p class="text-gray-200">Av. Tecnologia, 1000 - Campinas, SP</p>
                             </div>
                         </div>
 
@@ -292,12 +285,7 @@
 
                 <div class="bg-white rounded-xl p-8">
                     <h3 class="text-2xl font-bold text-primary-dark mb-6">Envie uma Mensagem</h3>
-                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
-                        <p class="text-yellow-800 text-sm">
-                            <strong>Demo:</strong> Este é um formulário de demonstração. Em um site real, seria
-                            necessário configurar um backend para processar as mensagens.
-                        </p>
-                    </div>
+
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <label class="block text-secondary-dark font-semibold mb-2">Nome Completo</label>
@@ -344,10 +332,8 @@
                 <div>
                     <div class="flex items-center space-x-3 mb-4">
                         <div class="w-8 h-8 bg-accent-blue rounded-lg flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                            </svg>
+                            <img src="logoSafe-S.png" alt="Safe Vision Logo"
+                                class="w-8 h-8 rounded-lg object-contain bg-white p-1">
                         </div>
                         <h3 class="text-xl font-bold">Safe Vision</h3>
                     </div>
@@ -382,13 +368,13 @@
                         <li>(11) 9999-8888</li>
                         <li>contato@safevision.com.br</li>
                         <li>Av. Tecnologia, 1000</li>
-                        <li>São Paulo, SP</li>
+                        <li>Campinas, SP</li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Safe Vision. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Safe Vision. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
